@@ -3,8 +3,10 @@ Robust inference for high-dimensional single index model with distribution trans
 
 
 ## Installation
+```{R}
 install.packages("devtools")
 devtools::install_github("havanashw/RobustSIM")
+```
 
 ## Example
 ```{R}
