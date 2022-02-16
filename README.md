@@ -26,9 +26,9 @@ x <- mvrnorm(n, mu=rep(0, p), Sigma=Sig)
 error <- rnorm(n)
 beta.true <- c(1, 1, 1, 1, rep(0, p-4))
 y <- x%*%beta.true + 1*error
-interest <- c(1:4, p); err.type <- 1; model <- 1;
-outlier.prop <- 0; outlier.multi <- 0;
-penalty <- "lasso"; nfolds <- 10;
+interest <- c(1:4, p)
+outlier.prop <- 0; outlier.multi <- 0
+penalty <- "lasso"; nfolds <- 10
 RobustSIM(x, y, interest, outlier.prop, outlier.multi, penalty, nfold)
 ```
 
