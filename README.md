@@ -7,6 +7,7 @@ install.packages("devtools")
 devtools::install_github("havanashw/RobustSIM")
 
 ## Example
+```{R}
 library(RobustSIM)
 library(Matrix)
 n <- 200; p <- 400
@@ -24,4 +25,5 @@ interest <- c(1:4, p); err.type <- 1; model <- 1;
 outlier.prop <- 0; outlier.multi <- 0;
 penalty <- "lasso"; nfolds <- 10;
 RobustSIM(x, y, interest, outlier.prop, outlier.multi, penalty, nfold)
+```
 
