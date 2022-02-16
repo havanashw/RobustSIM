@@ -6,6 +6,7 @@ The goal of RobustSIM is to provide robust inference procedures for high-dimensi
 
 
 ## Example
+```{R}
 n <- 200; p <- 400
 p.sub <- p/10
 list.temp <- NULL
@@ -24,5 +25,5 @@ penalty <- "lasso"; nfolds <- 10;
 RSIM(x, y, interest, err.type,
      model, outlier.prop, outlier.multi,
      penalty, nfolds)
-
+```
 
