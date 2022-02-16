@@ -13,6 +13,7 @@ devtools::install_github("havanashw/RobustSIM")
 ```
 ## Example
 ```{R}
+library(RobustSIM)
 library(MASS)
 library(Matrix)
 n <- 200; p <- 400
