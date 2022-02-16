@@ -1,0 +1,10 @@
+Package: RobustSIM
+Type: Package
+Title: Robust inference for single index model
+Version: 0.1.0
+Author: Hongwei Shi
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This package provides a robust inference procedure for high-dimensional single index model with distribution transformation.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
