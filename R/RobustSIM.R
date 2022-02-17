@@ -3,7 +3,12 @@ RobustSIM <- function(x, y, interest=c(1:2, p-1, p),
                       penalty="lasso", nfolds=10) {
   need.pakgs <- c("ncvreg", "glmnet")
   has <- need.pakgs %in% rownames(installed.packages())
-  if(any(!has)) install.packages(need.pakgs[!has])
+  if (any(!has)) {
+    cat("Please install and library the dependent packages:", need.pakgs, "\n")
+    install.packages(need.pakgs[!has])
+    library(need.pakgs[!has])
+  }
+
 
   ## the empirical distribution transformation of response
   # add outliers to y
