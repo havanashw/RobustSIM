@@ -11,7 +11,7 @@ remotes::install_github("havanashw/RobustSIM")
 install.packages("devtools")
 devtools::install_github("havanashw/RobustSIM")
 ```
-## Example of statistical inference
+## Example of statistical inference based on RobustSIM
 ```{R}
 library(RobustSIM)
 library(MASS)
@@ -33,7 +33,7 @@ penalty <- "lasso"; nfolds <- 10;
 RobustSIM(x, y, interest, outlier.prop, outlier.multi, penalty, nfolds)
 ```
 
-## Example of fdr control for RobustSIM
+## Example of fdr control based on RobustSIM
 ```{R}
 library(MASS)
 library(Matrix)
