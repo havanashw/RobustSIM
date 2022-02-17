@@ -1,12 +1,10 @@
-library(MASS)
-library(ncvreg)
-library(glmnet)
-library(hqreg)
-library(flare)
-
 RobustSIM <- function(x, y, interest=c(1:2, p-1, p),
                       outlier.prop=0, outlier.multi=10,
                       penalty="lasso", nfolds=10) {
+  need.pakgs <- c("ncvreg", "glmnet")
+  has <- need.pakgs %in% rownames(installed.packages())
+  if(any(!has)) install.packages(need.pakgs[!has])
+
   ## the empirical distribution transformation of response
   # add outliers to y
   n <- nrow(x); p <- ncol(x)

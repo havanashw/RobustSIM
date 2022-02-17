@@ -20,6 +20,7 @@ RobustSIM(x, y, interest, outlier.prop, outlier.multi, penalty, nfold)
   \item{teststats}{the test satstistics for coefficients of interest.}
 }
 \examples{
+library(MASS)
 library(Matrix)
 n <- 200; p <- 400
 p.sub <- p/10
@@ -31,9 +32,9 @@ Sig <- as.matrix(bdiag(list.temp))
 x <- mvrnorm(n, mu=rep(0, p), Sigma=Sig)
 error <- rnorm(n)
 beta.true <- c(1, 1, 1, 1, rep(0, p-4))
-y <- x%*%beta.true + 1*error
+y <- x\%*\%beta.true + 1*error
 interest <- c(1:4, p); err.type <- 1; model <- 1;
 outlier.prop <- 0; outlier.multi <- 0;
 penalty <- "lasso"; nfolds <- 10;
-RobustSIM(x, y, interest, outlier.prop, outlier.multi, penalty, nfold)
+RobustSIM(x, y, interest, outlier.prop, outlier.multi, penalty, nfolds)
 }
