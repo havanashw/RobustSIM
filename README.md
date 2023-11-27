@@ -1,5 +1,5 @@
 # RobustSIM
-Robust inference for high-dimensional single index model with distribution transformation.
+R code for "Robust group and simultaneous inferences for ultrahigh-dimensional single index model".
 
 
 ## Installation
