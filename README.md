@@ -1,5 +1,5 @@
 # RobustSIM
-R code for "Robust group and simultaneous inferences for ultrahigh-dimensional single index model".
+R code for "Robust group and simultaneous inferences for high-dimensional single index model".
 
 
 ## Installation
